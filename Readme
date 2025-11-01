@@ -1,0 +1,69 @@
+# 🚀 DepWay – Automating Dockerization for Developers
+
+## 📖 Overview
+**DepWay** is a web-based platform that automates the **Dockerization process** for developers and students.  
+Instead of manually writing Dockerfiles and building Docker images, users can upload their project or connect a GitHub repository.  
+DepWay will automatically generate a Dockerfile, build the image, and run it locally or in a controlled environment — making **containerization** simple, fast, and educational.
+
+---
+
+## 🎯 Objectives
+- Automate the creation of Dockerfiles for different backend technologies (Node.js, Python, .NET, etc.).
+- Build and run Docker images directly from a user-friendly web interface.
+- Provide an educational tool to teach DevOps fundamentals.
+- Simplify environment setup and packaging for student and small developer projects.
+
+---
+
+## ⚙️ Features
+### 👤 User Management
+- Register/Login to manage Dockerized projects.  
+
+### 📦 Project Upload / GitHub Integration
+- Upload project files or link a GitHub repository.
+- Automatically detect the backend language or framework.
+
+### 🐳 Automatic Dockerfile Generation
+- Generate Dockerfile templates dynamically based on the detected technology.
+- Allow users to preview or edit before building.
+
+### ⚙️ Image Building and Containerization
+- Automatically build Docker images.
+- Show real-time build logs and status feedback.
+
+### ▶️ Container Execution
+- Run containers in a sandboxed local environment.
+- Display container ID, exposed port, and runtime status.
+
+### 🧾 Logs & History
+- Keep a record of all builds and execution logs for each project.
+
+---
+
+## 🧱 System Architecture
+1. **Frontend:** Web dashboard for project management (Next.js).  
+2. **Backend API:** Handles project uploads, Dockerfile generation, and build logic (Node.js).  
+3. **Docker Engine:** Runs containers using Docker SDK or CLI.  
+4. **Database:** Stores user, project, and build history data (PostgreSQL).
+
+---
+
+## 🧰 Tech Stack
+| Layer | Technology |
+|--------|-------------|
+| **Frontend** | Nextjs |
+| **Backend** | Express |
+| **Containerization** | Docker |
+| **Database** | PostgreSQL |
+| **Authentication** | JWT |
+| **Version Control** | GitHub |
+| **Hosting (Dev)** | Localhost or VPS |
+
+---
+
+## 🧑‍💻 Getting Started
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/YourUsername/DepWay.git
+cd DepWay
