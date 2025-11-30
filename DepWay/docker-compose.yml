@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  dockerization-app:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./temp:/app/temp
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    networks:
+      - dockerization-network
+
+networks:
+  dockerization-network:
+    driver: bridge
+
