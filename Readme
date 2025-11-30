@@ -61,9 +61,12 @@ DepWay will automatically generate a Dockerfile, build the image, and run it loc
 
 ---
 
+## Video Link:
+https://drive.google.com/file/d/1jCsj3ZrirCG705rEBY9YQI7fX_wkbNTZ/view?usp=sharing
+
 ## 🧑‍💻 Getting Started
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/YourUsername/DepWay.git
+git clone https://github.com/NourElden20/DepWay.git
 cd DepWay
